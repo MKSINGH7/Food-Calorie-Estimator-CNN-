@@ -146,10 +146,10 @@ With `llm_only` you can even skip training and let the LLM identify the food alo
 Notes: local vision models are less accurate at calorie estimation than the CNN-plus-table route or large online
 models – treat their numbers as rough. Never commit `.env` (it is in `.gitignore`).
 
-## Input
+## Output
 <img width="1912" height="862" alt="Screenshot 2026-10-10 080254" src="https://github.com/user-attachments/assets/07455bad-9c41-4e29-b9a1-5e7410f4b262" />
 
-## Output
+
 <img width="1896" height="857" alt="Screenshot 2026-10-10 080343" src="https://github.com/user-attachments/assets/96421d08-643f-4565-892c-caa429a444d3" />
 
 ## Workflow of the whole project
