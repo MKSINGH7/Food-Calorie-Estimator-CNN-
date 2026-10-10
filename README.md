@@ -174,6 +174,3 @@ models – treat their numbers as rough. Never commit `.env` (it is in `.gitigno
 * Larger backbone: swap `MobileNetV2` in `src/model.py` for `EfficientNetB0` (note its own pre-processing).
 * Check `outputs/confusion_matrix.png` to see which foods get confused and add data for them.
 * Calorie accuracy is limited by portion size: always pass `--grams` / the grams field when you know the weight.
-
-## RUN
-uvicorn src.api:app --port 8000
