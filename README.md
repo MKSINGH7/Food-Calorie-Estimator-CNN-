@@ -86,6 +86,7 @@ Outputs: `models/food_classifier.keras`, `models/model_meta.json`, and in `outpu
 `confusion_matrix.png`, `classification_report.txt`, `metrics.json`.
 **Compare `outputs/accuracy.png` with the old plot** – the train/validation gap should be far smaller.
 Expect a CPU run of roughly 30–90 minutes for the default settings; a GPU (or Google Colab) takes minutes.
+<img width="557" height="700" alt="Screenshot 2026-10-10 065108" src="https://github.com/user-attachments/assets/b2685cbc-5b8c-4327-82fd-6bc4dae4caa1" />
 
 ## 5. Predict
 
@@ -144,6 +145,12 @@ With `llm_only` you can even skip training and let the LLM identify the food alo
 
 Notes: local vision models are less accurate at calorie estimation than the CNN-plus-table route or large online
 models – treat their numbers as rough. Never commit `.env` (it is in `.gitignore`).
+
+## Input
+<img width="1912" height="862" alt="Screenshot 2026-10-10 080254" src="https://github.com/user-attachments/assets/07455bad-9c41-4e29-b9a1-5e7410f4b262" />
+
+## Output
+<img width="1896" height="857" alt="Screenshot 2026-10-10 080343" src="https://github.com/user-attachments/assets/96421d08-643f-4565-892c-caa429a444d3" />
 
 ## Workflow of the whole project
 
