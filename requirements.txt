@@ -1,0 +1,11 @@
+tensorflow>=2.16
+numpy
+pillow
+matplotlib
+scikit-learn
+fastapi
+uvicorn[standard]
+python-multipart
+requests
+anthropic
+python-dotenv

@@ -1,0 +1,17 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+dataset/
+dataset_dummy/
+_staging/
+food-101/
+food-101.tar.gz
+*.keras
+*.h5
+models/*
+!models/.gitkeep
+outputs/*
+!outputs/.gitkeep
+.DS_Store
