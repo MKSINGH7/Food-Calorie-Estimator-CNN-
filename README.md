@@ -168,18 +168,5 @@ models – treat their numbers as rough. Never commit `.env` (it is in `.gitigno
 * Check `outputs/confusion_matrix.png` to see which foods get confused and add data for them.
 * Calorie accuracy is limited by portion size: always pass `--grams` / the grams field when you know the weight.
 
-## Troubleshooting
-| Symptom | Fix |
-|---|---|
-| `No trained model at models/food_classifier.keras` | run step 4, or use `--llm-only` with an LLM provider |
-| `URL fetch failure … mobilenet_v2 weights` | no internet/proxy for ImageNet weights – fix network, or train with `--no-pretrained` (much worse) |
-| Out-of-memory while training | `--batch-size 16` and/or `--img-size 160` |
-| `Ollama error … connection refused` | `ollama serve` not running or wrong `OLLAMA_URL` |
-| `ANTHROPIC_API_KEY is not set` | fill `.env` (no quotes needed) |
-| TensorFlow won't install | use Python 3.10–3.13 (64-bit); on Apple Silicon `pip install tensorflow` works on recent versions |
-| Wrong class names after retraining | never edit `models/model_meta.json` by hand; retrain regenerates it |
-
-Calorie values in `data/calories.json` are approximate averages; this tool is an estimate, not dietary or medical advice.
-
-##RUN
+## RUN
 uvicorn src.api:app --port 8000
