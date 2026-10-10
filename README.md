@@ -86,6 +86,8 @@ Outputs: `models/food_classifier.keras`, `models/model_meta.json`, and in `outpu
 `confusion_matrix.png`, `classification_report.txt`, `metrics.json`.
 **Compare `outputs/accuracy.png` with the old plot** – the train/validation gap should be far smaller.
 Expect a CPU run of roughly 30–90 minutes for the default settings; a GPU (or Google Colab) takes minutes.
+
+
 <img width="557" height="700" alt="Screenshot 2026-10-10 065108" src="https://github.com/user-attachments/assets/b2685cbc-5b8c-4327-82fd-6bc4dae4caa1" />
 
 ## 5. Predict
