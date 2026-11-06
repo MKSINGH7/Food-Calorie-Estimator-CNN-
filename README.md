@@ -19,7 +19,7 @@ food_calories_cnn/
 │   ├── config.py             paths + .env settings
 │   ├── prepare_data.py       download Food-101 subset / split your own photos
 │   ├── data.py               tf.data loaders
-│   ├── model.py              MobileNetV2 (default) or small CNN
+│   ├── model.py              YOLO11/MobileNetV2 (default) or small CNN
 │   ├── train.py              2-phase training, plots, report
 │   ├── predict.py            CLI + analyze() pipeline
 │   ├── llm.py                Anthropic (online) / Ollama (local) client
@@ -78,7 +78,7 @@ Result: `dataset/train/<class>/…` and `dataset/validation/<class>/…`
 ```bash
 python -m src.train
 ```
-Phase 1 trains the new classifier head, phase 2 fine-tunes the top of MobileNetV2 with a lower learning rate. Early
+Phase 1 trains the new classifier head, phase 2 fine-tunes the top of YOLO11/MobileNetV2 with a lower learning rate. Early
 stopping + best-weights restore are built in. Useful flags: `--epochs`, `--finetune-epochs`, `--batch-size`,
 `--arch cnn`, `--img-size 160` (faster on CPU).
 
